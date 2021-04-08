@@ -4,3 +4,37 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* LANDING PAGE */
+
+#landing-page {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: cyan;
+}
+
+#landing-header {
+    height: 30vh;
+    width: clamp(20rem, 40vw, 80rem);
+    line-height: 1.75rem;
+
+    text-align: center;
+}
+
