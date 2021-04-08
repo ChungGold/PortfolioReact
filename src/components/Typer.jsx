@@ -4,19 +4,33 @@ const words = 'Hello, my name is Chung Au';
 
 const Typer = props => {
     const [msg, setMsg] = useState(0);
-
+    const [blink, setBlink] = useState('|');
+    
+    //Typing effect
     const countRef = useRef(1);
 
     useEffect(() => {
-        setTimeout(() => {
+        const timeout = setTimeout(() => {
             setMsg(words.substring(0, countRef.current));
-            console.log(countRef.current)
             countRef.current++;
-        }, 50);
+        }, 75);
+        return () => clearTimeout(timeout);
     }, [msg]);
 
+    //Blinker
+    useEffect(() => {
+        const timeoutTwo = setTimeout(() => {
+            if (blink === '|') {
+                setBlink('');
+            } else {
+                setBlink('|');
+            }
+        }, 750);
+        return () => clearTimeout(timeoutTwo);
+    }, [blink]);
+
     return (
-        <h1>{msg}</h1>
+        <h1>{msg}{blink}</h1>
     )
 }
 

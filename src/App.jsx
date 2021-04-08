@@ -1,9 +1,11 @@
 import Landing from "./components/Landing"
+import Projects from "./components/Projects"
 
-function App() {
-    return (
+const App = props => {
+    return (<div id = 'app'>
         <Landing />
-    );
+        <Projects />
+    </div>);
 }
 
 export default App;

@@ -7,18 +7,29 @@
 
 body {
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 #root {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+#app {
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
 /* LANDING PAGE */
 
 #landing-page {
@@ -40,4 +51,20 @@ body {
     text-align: center;
     line-height: 1.75rem;
 
+}
+
+/* PROJECTS PAGE */
+#projects-grid {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: 33vh 33vh 33vh;
+
+    background-color: #374045;
+}
+
+.box {
+    border: 1px solid black;
 }
