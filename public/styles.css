@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 #root {
@@ -27,14 +29,15 @@ body {
     justify-content: center;
     align-items: center;
 
-    background-color: cyan;
+    background-color: #374045;
 }
 
 #landing-header {
     height: 30vh;
     width: clamp(20rem, 40vw, 80rem);
+
+    color: white;
+    text-align: center;
     line-height: 1.75rem;
 
-    text-align: center;
 }
-

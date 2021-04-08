@@ -1,13 +1,9 @@
-import {React, useState } from "react";
+import Typer from './Typer'
 
-function Landing() {
-    const [name, typeName] = useState(null);
-
-
-
+const Landing = props => {
     return (<section id = 'landing-page'>
         <article id = 'landing-header'>
-            <h1>Hello, my name is Chung Au</h1>
+            <Typer />
             <p>I’m a frontend developer with a knack for CSS. 
             I enjoy building the front-end of websites and applications from the ground up. 
             I have a lot of fun with UI/UX, but I get true satisfaction from crunching code in 
