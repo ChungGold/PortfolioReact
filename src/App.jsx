@@ -1,10 +1,10 @@
 import Landing from "./components/Landing"
-import Projects from "./components/Projects"
+import Grid from "./components/Grid"
 
 const App = props => {
     return (<div id = 'app'>
         <Landing />
-        <Projects />
+        <Grid />
     </div>);
 }
 

@@ -65,6 +65,32 @@ body {
     background-color: #374045;
 }
 
+/* CARDS */
+
 .box {
     border: 1px solid black;
+}
+
+img {
+    position: absolute;
+    width: 25vw;
+    height: 33vh;
+    object-fit: cover;
+}
+
+figcaption {
+    position: absolute;
+    width: 25vw;
+    height: 33vh;
+
+    background-color: black;
+    color: white;
+
+    text-align: center;
+    opacity: 0;
+    z-index: 1;
+}
+
+figcaption:hover {
+    opacity: 0.9;
 }
