@@ -1,9 +1,9 @@
 import {FaGithub, FaExternalLinkAlt} from 'react-icons/fa';
 
 const Card = props => {
-    return (<figure className = 'box'>
-        <img src = {props.image}></img>
-        <figcaption>
+    return (<figure className = 'card'>
+        <img src = {props.image} alt = {props.alt}></img>
+        <figcaption className = 'card-info'>
             <h1>{props.title}</h1>
             <p>{props.desc}</p>
             <FaGithub className = 'icon' />

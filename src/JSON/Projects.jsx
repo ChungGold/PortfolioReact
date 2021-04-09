@@ -18,6 +18,7 @@ const Projects = [
         desc: "A terminal portfolio built in React using Samuel Sandoval's portfolio as a wireframe. Despite the wire-framed design, the code is original and written by myself.",
         github: "https://github.com/ChungGold/terminalPortfolio",
         link: "https://terminal-portfolio-nine.vercel.app/",
+        alt: "Chung Au Front End Developer Terminal Portfolio"
     },
     {
         image: clock,
@@ -25,6 +26,7 @@ const Projects = [
         desc: "An analog clock app that I built out using React. The time and hand-positions are accurate to the second!",
         github: "https://github.com/ChungGold/clock",
         link: "https://chungs-clock.vercel.app/",
+        alt: "Chung Au React Analog Clock app"
     },
     {
         image: xoBeautyBrows,
@@ -32,6 +34,7 @@ const Projects = [
         desc: "A static website designed in vanilla for a local beauty business.",
         github: "https://github.com/ChungGold/Client1/",
         link: "https://www.xobeautybrows.com/",
+        alt: "Chung Au XO BeautyBrows vanill Client Website"
     },
     {
         image: letterRain,
@@ -39,6 +42,7 @@ const Projects = [
         desc: "A vanilla JavaScript project that uses event listeners to call a function that constructs letter-objects that drop from the top like rain. The letters animate off the bottom of the window and bounce randomly due to JavaScript randomizing the keyframe values.",
         github: "https://github.com/ChungGold/LetterRain",
         link: "https://letter-rain.vercel.app/",
+        alt: "Chung Au JavaScript letter rain animation app"
     },
     {
         image: shootingPractice,
@@ -46,6 +50,7 @@ const Projects = [
         desc: "A JavaScript game I developed after making the 'target' cursor.",
         github: "https://github.com/ChungGold/Aim",
         link: "https://shooting-practice.vercel.app/",
+        alt: "Chung Au JavaScript shooting game"
     },
     {
         image: portfolio,
@@ -53,6 +58,7 @@ const Projects = [
         desc: "A portfolio draft I developed in vanilla. This draft was re-imagined and rebuilt into the portfolio you're exploring right now!",
         github: "https://github.com/ChungGold/officialPortfolio",
         link: "https://chung-au.vercel.app/",
+        alt: "Chung Au vanilla original portfolio draft"
     },
     {
         image: typeDrop,
@@ -60,6 +66,7 @@ const Projects = [
         desc: "A JavaScript typing app I made with animations set for every keystroke.",
         github: "https://github.com/ChungGold/keyboard",
         link: "https://keyboard-vert.vercel.app/",
+        alt: "Chung Au JavaScript typing animation app"
     },
     {
         image: shapes,
@@ -67,6 +74,7 @@ const Projects = [
         desc: "A CSS animation I made showing off three 3D shapes visually-contained inside of each other. JavaScript was used to save time on writing HTML and CSS.",
         github: "https://github.com/ChungGold/Shapes",
         link: "https://3d-shapes.vercel.app/",
+        alt: "Chung Au CSS 3D shapes animation sphere cube pyramid"
     },
     {
         image: glitchCube,
@@ -74,6 +82,7 @@ const Projects = [
         desc: "A CSS animation making use of the clip property to make an eye-bending effect. The cube lettering is moved by a vanilla JavaScript carousel.",
         github: "https://github.com/ChungGold/GlitchCube",
         link: "https://text-cube.vercel.app/",
+        alt: "Chung Au CSS glitch cube trippy animation"
     },
     {
         image: typeCube,
@@ -81,6 +90,7 @@ const Projects = [
         desc: "An animation app that shows off different shapes that can be formed with six box panels. Type first to form the cube!",
         github: "https://github.com/ChungGold/TypeCube",
         link: "https://typecube.vercel.app/",
+        alt: "Chung Au JavaScript typing cube app"
     },
     {
         image: ripple,
@@ -88,6 +98,7 @@ const Projects = [
         desc: "A fun project I made with JavaScript to create a water ripple effect. Click anywhere!",
         github: "https://github.com/ChungGold/ripple-dripple",
         link: "https://ripple-mu.vercel.app/",
+        alt: "Chung Au JavaScript clicking water ripple animation app"
     },
     {
         image: champloo,
@@ -95,6 +106,7 @@ const Projects = [
         desc: "An animation I made using JavaScript to create the HTML with varying animation-delays applied. The image was 'broken down' using the object-position property.",
         github: "https://github.com/ChungGold/Champloo",
         link: "https://champloo.vercel.app/",
+        alt: "Chung Au JavaScript CSS animation samurai champloo image"
     }
 ]
 

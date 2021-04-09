@@ -1,5 +1,5 @@
 import Card from './Card';
-import Projects from './Projects';
+import Projects from '../JSON/Projects';
 
 const createCard = (Projects) => {
     return (
@@ -7,6 +7,7 @@ const createCard = (Projects) => {
         image = {Projects.image}
         title = {Projects.title}
         desc = {Projects.desc}
+        alt = {Projects.alt}
     />
     )
 }

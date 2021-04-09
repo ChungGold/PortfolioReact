@@ -60,28 +60,28 @@ body {
 
     display: grid;
     grid-template-columns: 25vw 25vw 25vw 25vw;
-    grid-template-rows: 33vh 33vh 33vh;
+    grid-template-rows: 33.33vh 33.33vh 33.33vh;
 
     background-color: #374045;
 }
 
 /* CARDS */
 
-.box {
-    border: 1px solid black;
+.card {
+    
 }
 
 img {
     position: absolute;
     width: 25vw;
-    height: 33vh;
+    height: 33.33vh;
     object-fit: cover;
 }
 
-figcaption {
+.card-info {
     position: absolute;
     width: 25vw;
-    height: 33vh;
+    height: 33.33vh;
 
     background-color: black;
     color: white;
@@ -91,6 +91,25 @@ figcaption {
     z-index: 1;
 }
 
-figcaption:hover {
+.card-info:hover {
     opacity: 0.9;
+}
+
+/* SKILLS */
+
+#skillset {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: #374045;
+}
+
+.skill-groups {
+    width: 25vw;
+    height: 70vh;
+    border: cyan 1px solid;
 }
