@@ -47,7 +47,7 @@ const Projects = [
     {
         image: shootingPractice,
         title: "Shooting Practice",
-        desc: "A JavaScript game I developed after making the 'target' cursor.",
+        desc: "A JavaScript game I developed after making the 'target' cursor.  The goal is to click (or touch on mobile) the randomly generated blue circles to get rid of them.",
         github: "https://github.com/ChungGold/Aim",
         link: "https://shooting-practice.vercel.app/",
         alt: "Chung Au JavaScript shooting game"
