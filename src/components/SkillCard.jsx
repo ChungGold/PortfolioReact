@@ -8,7 +8,7 @@ const SkillCard = props => {
         </figcaption>
         <div className = 'skill-container'>
             <h3>HTML</h3>
-            <SiHtml5 />\
+            <SiHtml5 />
             <h3>CSS</h3>
             <SiCss3 />
             <h3>JavaScript</h3>

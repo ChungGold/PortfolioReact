@@ -1,13 +1,15 @@
 import Card from './Card';
-import Projects from '../JSON/Projects';
+import Projects from '../objects/Projects';
 
 const createCard = (Projects) => {
     return (
         <Card 
         image = {Projects.image}
+        alt = {Projects.alt}
         title = {Projects.title}
         desc = {Projects.desc}
-        alt = {Projects.alt}
+        github = {Projects.github}
+        link = {Projects.link}
     />
     )
 }

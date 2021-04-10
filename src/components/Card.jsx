@@ -7,8 +7,8 @@ const Card = props => {
             <h1>{props.title}</h1>
             <p>{props.desc}</p>
             <span>
-                <FaGithub className = 'icon' />
-                <FaExternalLinkAlt className = 'icon'/>
+                <a href = {props.github}><FaGithub className = 'icon' /></a>
+                <a href = {props.link}><FaExternalLinkAlt className = 'icon'/></a>
             </span>
         </figcaption>
     </figure>);
