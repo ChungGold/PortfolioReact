@@ -9,7 +9,7 @@ const words = [
 
 const Typer = props => {
     const [msg, setMsg] = useState(0);
-    const [blink, setBlink] = useState('|');
+    // const [blink, setBlink] = useState('|');
     
     //Typing effect
     const countRef = useRef(0);
@@ -17,44 +17,49 @@ const Typer = props => {
     const arrPos = useRef(0);
 
     useEffect(() => {
-        if (seqeuence.current === false) {
-            const timeout = setTimeout(() => {
-                setMsg(words[arrPos.current].substring(0, countRef.current));
-                countRef.current++;
-
-                if (countRef.current === words[arrPos.current].length) {
-                    clearInterval(timeout);
-                    seqeuence.current = true;
-                }
-            }, 75);
-        } else if (seqeuence.current === true) {
-            const timeout2 = setTimeout(() => {
-                setMsg(words[arrPos.current].substring(0, countRef.current));
-                countRef.current--;
-
-                if (countRef.current === 0) {
-                    clearTimeout(timeout2);
-                    seqeuence.current = false;
-                    arrPos.current++;
-                }
-            }, 75);
+        switch (seqeuence.current){
+            case false:
+                const timeout = setTimeout(() => {
+                    setMsg(words[arrPos.current].substring(0, countRef.current));
+                    countRef.current++;
+    
+                    if (countRef.current === words[arrPos.current].length) {
+                        clearInterval(timeout);
+                        seqeuence.current = true;
+                    }
+                }, 75);
+                break;
+            case true:
+                const timeout2 = setTimeout(() => {
+                    setMsg(words[arrPos.current].substring(0, countRef.current));
+                    countRef.current--;
+    
+                    if (countRef.current === 0) {
+                        clearTimeout(timeout2);
+                        seqeuence.current = false;
+                        arrPos.current++;
+                    }
+                }, 35);
+                break;
+            default:
+                console.log('test');
         }
     }, [msg]);
 
     //Blinker
-    useEffect(() => {
-        const timeoutTwo = setTimeout(() => {
-            if (blink === '|') {
-                setBlink('');
-            } else {
-                setBlink('|');
-            }
-        }, 750);
-        return () => clearTimeout(timeoutTwo);
-    }, [blink]);
+    // useEffect(() => {
+    //     const timeoutTwo = setTimeout(() => {
+    //         if (blink === '|') {
+    //             setBlink('');
+    //         } else {
+    //             setBlink('|');
+    //         }
+    //     }, 750);
+    //     return () => clearTimeout(timeoutTwo);
+    // }, [blink]);
 
     return (
-        <h1>{msg}{blink}</h1>
+        <h1>{msg}</h1>
     )
 }
 
