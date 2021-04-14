@@ -1,71 +1,56 @@
 import {useState, useEffect, useRef} from 'react';
 
-const words = [
-    'Hello, my name is Chung Au', 
-    `I'm a front-end developer`, 
-    'I made this typewriter component in React', 
-    `Although.. I'm still trying to make a cleanup function`,
-    `Seriously, if I don't keep adding more phrases in the array,`, 
-    `my portfolio will crash`];
-
 const Typer = props => {
+    //Object
+    const words = [
+        'Hello, my name is Chung Au', 
+        `I'm a front-end developer`, 
+        'Animations and interactive design is my forte'
+    ];
+
+    //States
     const [msg, setMsg] = useState(0);
-    // const [blink, setBlink] = useState('|');
     
-    //Typing effect
+    //References
     const letterCount = useRef(0);
     const reverse = useRef(false);
     const arrPos = useRef(0);
 
+    //Typing effect
     useEffect(() => {
         switch (reverse.current){
             case false:
                 if (arrPos.current === words.length){
                     arrPos.current = 0;
                 }
-                const timeout = setTimeout(() => {
+                setTimeout(() => {
                     setMsg(words[arrPos.current].substring(0, letterCount.current));
                     letterCount.current++;
     
                     if (letterCount.current === words[arrPos.current].length) {
-                        clearInterval(timeout);
                         reverse.current = true;
                     }
                 }, 75);
                 break;
+
+    //Reverse effect
             case true:
-                const timeout2 = setTimeout(() => {
+                setTimeout(() => {
                     setMsg(words[arrPos.current].substring(0, letterCount.current));
                     letterCount.current--;
     
                     if (letterCount.current === 0) {
-                        clearTimeout(timeout2);
                         reverse.current = false;
-                        console.log(arrPos.current);
                         arrPos.current++;
                     }
-                }, 35);
+                }, 75);
                 break;
             default:
-                console.log('test');
+                console.log('fail');
         }
     }, [msg]);
 
-    //Blinker
-    // useEffect(() => {
-    //     const timeoutTwo = setTimeout(() => {
-    //         if (blink === '|') {
-    //             setBlink('');
-    //         } else {
-    //             setBlink('|');
-    //         }
-    //     }, 750);
-    //     return () => clearTimeout(timeoutTwo);
-    // }, [blink]);
-
-    return (
-        <h1>{msg}</h1>
-    )
+    return {words, msg, letterCount, arrPos}
 }
 
 export default Typer;

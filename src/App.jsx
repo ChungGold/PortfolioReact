@@ -1,6 +1,6 @@
-import Landing from "./components/Landing"
-import Grid from "./components/Grid"
-import Skills from "./components/Skills"
+import Landing from "./interface/Landing"
+import Grid from "./interface/Grid"
+import Skills from "./interface/Skills"
 
 const App = props => {
     return (<div id = 'app'>

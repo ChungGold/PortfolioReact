@@ -1,4 +1,4 @@
-import Card from './Card';
+import Card from '../components/Card';
 import Projects from '../objects/Projects';
 
 const createCard = (Projects) => {

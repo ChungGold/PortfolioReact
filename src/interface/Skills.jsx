@@ -1,4 +1,4 @@
-import SkillCard from './SkillCard'
+import SkillCard from '../components/SkillCard'
 
 const Skills = props => {
     return (<section id = 'skillset'>

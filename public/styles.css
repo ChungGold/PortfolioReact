@@ -50,9 +50,40 @@ body {
 
     text-align: center;
     line-height: 1.75rem;
+}
+
+#landing-header button {
+    width: 20rem;
+    height: 5rem;
+
+    font-size: 2rem;
+    background-color: transparent;
+    border: white solid;
+}
+
+#landing-header button:hover {
+    background-color: red;
+}
+
+.letter {
 
 }
 
+.letter:hover {
+    animation: bounce 500ms 1 normal ease-in-out;
+}
+
+@keyframes bounce {
+    25% {
+        transform: scale(1.4,0.6);
+    }
+    50% {
+        transform: scale(0.9,1.2) translateY(-40px);
+    }
+    75% {
+        transform: scale(1.2,0.8);
+    }
+}
 /* PROJECTS PAGE */
 #projects-grid {
     width: 100vw;
