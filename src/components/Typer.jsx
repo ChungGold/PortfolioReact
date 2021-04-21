@@ -47,8 +47,8 @@ const Typer = props => {
                 break;
             default:
                 console.log('fail');
-        }
-    }, [msg]);
+    }
+}, [msg]);
 
     return {words, msg, letterCount, arrPos}
 }

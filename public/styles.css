@@ -84,6 +84,59 @@ body {
         transform: scale(1.2,0.8);
     }
 }
+
+/* CUBE ANIMATION*/
+
+#cube {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    transform-style: preserve-3d;
+
+    animation: cubeRotate 20s normal linear infinite;
+}
+
+@keyframes cubeRotate {
+    0% {
+        transform: rotate3d(1, 1, 1, -360deg);
+    }
+}
+
+.face {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 1px white solid;
+}
+
+.zero {
+    transform: translateZ(250px);
+}
+
+.one {
+    transform: translateZ(-250px);
+}
+
+.two {
+    transform: translateY(250px) rotateX(90deg);
+}
+
+.three {
+    transform: translateY(-250px) rotateX(90deg);
+}
+
+.four {
+    transform: translateX(250px) rotateY(90deg);
+}
+
+.five {
+    transform: translateX(-250px) rotateY(90deg);
+}
+
+
+
+
+
 /* PROJECTS PAGE */
 #projects-grid {
     width: 100vw;
