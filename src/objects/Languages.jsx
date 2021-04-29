@@ -1,14 +1,8 @@
-const skillIcons = [
+const Languages = [
     {
-        title: 'Front-End',
-        
-    },
-    {
-        title: 'Back-End'
-    },
-    {
-        title: 'Tools'
+        name: 'HTML',
+        img: 'SiHtml5'
     }
 ]
 
-export default skillIcons;
+export default Languages;

@@ -206,23 +206,6 @@ img {
     background-color: #374045;
 }
 
-.skill-groups {
-    width: 25vw;
-    height: 70vh;
-    border: cyan 1px solid;
-    border-radius: 25px;
-    text-align: center;
-}
-
-.skill-title {
-    width: 25vw;
-    height: 8vh;
-
-    line-height: 8vh;
-}
-
-.skill-container {
-    width: 25vw;
-    height: 62vh;
-    border: solid 1px cyan;
+.skillSvg {
+    font-size: 5rem;
 }

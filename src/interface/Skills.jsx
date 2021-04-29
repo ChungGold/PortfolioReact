@@ -1,10 +1,11 @@
 import SkillCard from '../components/SkillCard'
+import Languages from '../objects/Languages'
 
-const Skills = props => {
+const Skills = () => {
     return (<section id = 'skillset'>
-        <SkillCard />
-        <SkillCard />
-        <SkillCard />
+        <SkillCard 
+            name = {Languages[0].name}
+        />
     </section>);
 }
 
