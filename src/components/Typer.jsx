@@ -18,6 +18,11 @@ const Typer = props => {
 
     //Typing effect
     useEffect(() => {
+        const words = [
+            'Hello, my name is Chung Au', 
+            `I'm a front-end developer`, 
+            'Animations and interactive design is my forte'
+        ];
         switch (reverse.current){
             case false:
                 if (arrPos.current === words.length){
