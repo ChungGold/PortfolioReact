@@ -2,7 +2,7 @@ import Cube from '../components/Cube';
 import Typer from '../components/Typer';
 import Blinker from '../components/Blinker';
 
-const Landing = props => {
+const Landing = () => {
     const {msg} = Typer();
     const {blink} = Blinker();
 
