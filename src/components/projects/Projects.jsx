@@ -1,15 +1,15 @@
-import letterRain from '../assets/letterRain.PNG';
-import xoBeautyBrows from '../assets/xoBeautyBrows.PNG';
-import glitchCube from '../assets/glitchCube.PNG';
-import shootingPractice from '../assets/shootingPractice.PNG';
-import ripple from '../assets/ripple.PNG';
-import shapes from '../assets/shapes.PNG';
-import typeDrop from '../assets/typeDrop.PNG';
-import portfolio from '../assets/portfolio.PNG';
-import typeCube from '../assets/typeCube.PNG'
-import clock from '../assets/clock.PNG';
-import terminal from '../assets/terminal.PNG';
-import champloo from '../assets/champloo.PNG';
+import letterRain from '../../assets/letterRain.PNG';
+import xoBeautyBrows from '../../assets/xoBeautyBrows.PNG';
+import glitchCube from '../../assets/glitchCube.PNG';
+import shootingPractice from '../../assets/shootingPractice.PNG';
+import ripple from '../../assets/ripple.PNG';
+import shapes from '../../assets/shapes.PNG';
+import typeDrop from '../../assets/typeDrop.PNG';
+import portfolio from '../../assets/portfolio.PNG';
+import typeCube from '../../assets/typeCube.PNG'
+import clock from '../../assets/clock.PNG';
+import terminal from '../../assets/terminal.PNG';
+import champloo from '../../assets/champloo.PNG';
 
 const Projects = [
     {

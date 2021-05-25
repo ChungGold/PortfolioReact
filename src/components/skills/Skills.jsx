@@ -1,5 +1,5 @@
-import SkillCard from '../components/SkillCard'
-import Languages from '../objects/Languages'
+import SkillCard from './SkillCard'
+import Languages from './Languages'
 
 const Skills = () => {
     return (<section id = 'skillset'>

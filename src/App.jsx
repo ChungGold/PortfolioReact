@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import Landing from "./interface/Landing"
-import Grid from "./interface/Grid"
-import Skills from "./interface/Skills"
+import Landing from "./components/landingPage/Landing"
+import Grid from "./components/projects/Grid"
+import Skills from "./components/skills/Skills"
 
 const Container = styled.div`
     width: 100vw;
@@ -14,11 +14,13 @@ const Container = styled.div`
 `
 
 const App = () => {
-    return (<Container>
-        <Landing />
-        <Grid />
-        <Skills />
-    </Container>);
+    return (
+        <Container>
+            <Landing />
+            <Grid />
+            <Skills />
+        </Container>
+    );
 }
 
 export default App;

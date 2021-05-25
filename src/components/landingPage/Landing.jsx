@@ -1,6 +1,6 @@
-import Cube from '../components/Cube';
-import Typer from '../components/Typer';
-import Blinker from '../components/Blinker';
+import Cube from './Cube';
+import Typer from './Typer';
+import Blinker from './Blinker';
 
 const Landing = () => {
     const {msg} = Typer();

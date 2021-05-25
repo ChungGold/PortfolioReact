@@ -1,5 +1,5 @@
-import Card from '../components/Card';
-import Projects from '../objects/Projects';
+import Card from './Card';
+import Projects from './Projects';
 
 const createCard = (Projects) => {
     return (
@@ -14,7 +14,7 @@ const createCard = (Projects) => {
     )
 }
 
-const Grid = props => {
+const Grid = () => {
     return (<section id = 'projects-grid'>
         {Projects.map(createCard)}
     </section>);
