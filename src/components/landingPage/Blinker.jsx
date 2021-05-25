@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 
-const Blinker = props => {
+const Blinker = () => {
     const [blink, setBlink] = useState('');
 
     // Blinker

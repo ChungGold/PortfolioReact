@@ -23,43 +23,7 @@ body {
 
 /* LANDING PAGE */
 
-#landing-page {
-    width: 100vw;
-    height: 100vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #374045;
-}
-
-#landing-header {
-    height: 30vh;
-    width: clamp(20rem, 40vw, 80rem);
-
-    text-align: center;
-    line-height: 1.75rem;
-}
-
-#landing-header button {
-    width: 20rem;
-    height: 5rem;
-
-    font-size: 2rem;
-    background-color: transparent;
-    border: white solid;
-}
-
-#landing-header button:hover {
-    background-color: red;
-}
-
-.letter {
-
-}
-
-.letter:hover {
+/* .letter:hover {
     animation: bounce 500ms 1 normal ease-in-out;
 }
 
@@ -73,7 +37,7 @@ body {
     75% {
         transform: scale(1.2,0.8);
     }
-}
+} */
 
 /* CUBE ANIMATION*/
 
@@ -102,64 +66,6 @@ body {
 }
 
 
-
-
-
-/* PROJECTS PAGE */
-#projects-grid {
-    width: 100vw;
-    height: 100vh;
-
-    display: grid;
-    grid-template-columns: 25vw 25vw 25vw 25vw;
-    grid-template-rows: 33.33vh 33.33vh 33.33vh;
-
-    background-color: #374045;
-}
-
-/* CARDS */
-
-.card {
-
-}
-
-img {
-    position: absolute;
-    width: 25vw;
-    height: 33.33vh;
-    object-fit: cover;
-}
-
-.card-info {
-    position: absolute;
-    width: 25vw;
-    height: 33.33vh;
-
-    background-color: black;
-
-    opacity: 0;
-    z-index: 1;
-
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-flow: wrap column;
-}
-
-.card-info p {
-    width: 80%;
-}
-
-.card-info span {
-    width: 30%;
-    font-size: 2rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.card-info:hover {
-    opacity: 0.9;
-}
 
 /* SKILLS */
 

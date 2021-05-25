@@ -1,5 +1,6 @@
-import Card from './Card';
-import Projects from './Projects';
+import Card from './Card'
+import Projects from './Projects'
+import { ProjectsSection } from './ProjectStyles'
 
 const createCard = (Projects) => {
     return (
@@ -15,9 +16,11 @@ const createCard = (Projects) => {
 }
 
 const Grid = () => {
-    return (<section id = 'projects-grid'>
-        {Projects.map(createCard)}
-    </section>);
+    return (
+        <ProjectsSection>
+            {Projects.map(createCard)}
+        </ProjectsSection>
+    );
 }
 
 export default Grid;
