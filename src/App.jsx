@@ -18,7 +18,7 @@ const App = () => {
         <Container>
             <Landing />
             <Grid />
-            <Skills />
+            {/* <Skills /> */}
         </Container>
     );
 }

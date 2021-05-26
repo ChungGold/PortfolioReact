@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 //CUBE
 const Box = styled.div`
     position: absolute;
@@ -31,6 +30,7 @@ const Intro = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column wrap;
 
     background-color: #374045;
 
@@ -40,6 +40,25 @@ const Intro = styled.section`
         
         text-align: center;
         line-height: 1.75rem;
+
+        p {
+            margin-top: 2rem;
+        }
+    }
+
+    figure {
+        font-size: 2rem;
+        letter-spacing: 3rem;
+        z-index: 1;
+    
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
     }
 `
 
