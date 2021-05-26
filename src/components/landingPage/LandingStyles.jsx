@@ -42,7 +42,21 @@ const Intro = styled.section`
         line-height: 1.75rem;
 
         p {
-            margin-top: 2rem;
+            margin-top: clamp(1rem, 2.5vh, 3rem);
+
+            line-height: 2rem;
+            filter: opacity(0);
+            transform: translateX(-400px);
+
+            animation: slideIn 1 ease-in-out normal 2s;
+            animation-fill-mode: forwards;
+
+            @keyframes slideIn {
+                100% {
+                    filter: opacity(1);
+                    transform: translateX(0px);
+                }
+            }
         }
     }
 
@@ -58,6 +72,23 @@ const Intro = styled.section`
         a {
             color: white;
             text-decoration: none;
+            
+            :hover {
+                animation: bounce 500ms infinite normal ease-in-out;
+            }
+
+            @keyframes bounce {
+                25% {
+                    transform: scale(1.4,0.6);
+                }
+                50% {
+                    transform: scale(0.9,1.2) translateY(-10px);
+                    color: #ffd369;
+                }
+                75% {
+                    transform: scale(1.2,0.8);
+                }
+            }
         }
     }
 `
