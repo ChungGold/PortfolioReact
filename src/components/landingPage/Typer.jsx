@@ -1,6 +1,6 @@
 import {useState, useEffect, useRef} from 'react';
 
-const Typer = props => {
+const Typer = () => {
     //Object
     const words = [
         'Hello, my name is Chung Au', 

@@ -36,46 +36,52 @@ const Intro = styled.main`
 
     section {
         width: 100vw;
-        height: 100vh;
+        height: 40vh;
 
         display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        align-content: space-between;
+
+        h1 {
+            height: 3rem;
+        }
+
+        h1, p {
+            width: clamp(20rem, 40vw, 80rem);
+            
+            text-align: center;
+            line-height: 1.75rem;
+        }
+
+        p {
+            height: 30vh;
+            margin-top: clamp(1rem, 2.5vh, 3rem);
+            font-size: clamp(12px, 3vw , 16px);
         
-
-
-        article {
-        height: 30vh;
-        width: clamp(20rem, 40vw, 80rem);
+            line-height: clamp(24px, 3vw , 32px);
+            filter: opacity(0);
+            transform: translateX(-400px);
         
-        text-align: center;
-        line-height: 1.75rem;
-
-            p {
-                margin-top: clamp(1rem, 2.5vh, 3rem);
-            
-                line-height: 2rem;
-                filter: opacity(0);
-                transform: translateX(-400px);
-            
-                animation: slideIn 1 ease-in-out normal 2s;
-                animation-fill-mode: forwards;
-            
-                @keyframes slideIn {
-                    100% {
-                        filter: opacity(1);
-                        transform: translateX(0px);
-                    }
+            animation: slideIn 1 ease-in-out normal 2s;
+            animation-fill-mode: forwards;
+        
+            @keyframes slideIn {
+                100% {
+                    filter: opacity(1);
+                    transform: translateX(0px);
                 }
             }
         }
+        
 
         nav {
-            font-size: 2rem;
+            font-size: clamp(24px, 3vw , 32px);
             letter-spacing: 3rem;
             z-index: 1;
         
             width: 200px;
+            height: 3rem;
             display: flex;
             justify-content: space-between;
 
