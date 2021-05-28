@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 //CUBE
-const Box = styled.div`
+const Box = styled.figure`
     position: absolute;
     width: 500px;
     height: 500px;
@@ -23,7 +23,7 @@ const Box = styled.div`
     }
 `
 
-const Intro = styled.section`
+const Intro = styled.main`
     width: 100vw;
     height: 100vh;
 
@@ -34,59 +34,70 @@ const Intro = styled.section`
 
     background-color: #374045;
 
-    article {
+    section {
+        width: 100vw;
+        height: 100vh;
+
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        
+
+
+        article {
         height: 30vh;
         width: clamp(20rem, 40vw, 80rem);
         
         text-align: center;
         line-height: 1.75rem;
 
-        p {
-            margin-top: clamp(1rem, 2.5vh, 3rem);
-
-            line-height: 2rem;
-            filter: opacity(0);
-            transform: translateX(-400px);
-
-            animation: slideIn 1 ease-in-out normal 2s;
-            animation-fill-mode: forwards;
-
-            @keyframes slideIn {
-                100% {
-                    filter: opacity(1);
-                    transform: translateX(0px);
+            p {
+                margin-top: clamp(1rem, 2.5vh, 3rem);
+            
+                line-height: 2rem;
+                filter: opacity(0);
+                transform: translateX(-400px);
+            
+                animation: slideIn 1 ease-in-out normal 2s;
+                animation-fill-mode: forwards;
+            
+                @keyframes slideIn {
+                    100% {
+                        filter: opacity(1);
+                        transform: translateX(0px);
+                    }
                 }
             }
         }
-    }
 
-    figure {
-        font-size: 2rem;
-        letter-spacing: 3rem;
-        z-index: 1;
-    
-        width: 200px;
-        display: flex;
-        justify-content: space-between;
+        nav {
+            font-size: 2rem;
+            letter-spacing: 3rem;
+            z-index: 1;
+        
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
 
-        a {
-            color: white;
-            text-decoration: none;
-            
-            :hover {
-                animation: bounce 500ms infinite normal ease-in-out;
-            }
+            a {
+                color: white;
+                text-decoration: none;
 
-            @keyframes bounce {
-                25% {
-                    transform: scale(1.4,0.6);
+                :hover {
+                    animation: bounce 500ms infinite normal ease-in-out;
                 }
-                50% {
-                    transform: scale(0.9,1.2) translateY(-10px);
-                    color: #ffd369;
-                }
-                75% {
-                    transform: scale(1.2,0.8);
+
+                @keyframes bounce {
+                    25% {
+                        transform: scale(1.4,0.6);
+                    }
+                    50% {
+                        transform: scale(0.9,1.2) translateY(-10px);
+                        color: #ffd369;
+                    }
+                    75% {
+                        transform: scale(1.2,0.8);
+                    }
                 }
             }
         }
